@@ -1,3 +1,12 @@
+import { AnalyticsBrowser } from '@segment/analytics-next'
+
+const analytics = AnalyticsBrowser.load({ writeKey: 'eQe85rJZPhAbR31wjb6eAMFDFbgGhXEJ' })
+
+analytics.identify('hello world')
+
+document.body?.addEventListener('click', () => {
+  analytics.track('document body clicked!')
+})
 $(function() {
 	var callback = function(event) {
 		event.preventDefault();
