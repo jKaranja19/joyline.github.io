@@ -1,0 +1,10 @@
+{
+    "businesses": [
+      {
+        "id": 1,
+        "name": "Example Business",
+        "type": "Retail"
+      }
+    ]
+  }
+  
